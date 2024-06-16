@@ -1,0 +1,346 @@
+* {
+  font-family: $font-family-text;
+  font-size: $font-size-text;
+  position: $value-flex;
+}
+
+.header {
+  padding: $value-one;
+
+  .header__title {
+    font-size: $font-size-titles;
+    text-align: $value-center;
+    padding: $value-five;
+  }
+
+  .header__title--home {
+    font-size: $font-size-title;
+    text-align: $value-center;
+    padding-top: $value-fifteen;
+    color: $color-eight;
+    animation-duration: $value-three-sec;
+    animation-name: $value-slidein;
+    animation-iteration-count: $value-initial;
+  }
+
+  .header__logo--home {
+    margin-left: $value-forty;
+    padding: $value-two;
+  }
+}
+
+.navigation__menu {
+  color: $color-one;
+
+  .navigation__menu--options {
+    list-style-type: $value-none;
+    text-align: $value-center;
+  }
+
+  .navigation__menu--options--option {
+    padding: $value-three;
+  }
+
+  .navigation__menu--options--option--link {
+    text-decoration: $value-none;
+    color: $color-three;
+  }
+
+  .navigation__menu--options--option--link:hover {
+    color: $color-nine;
+  }
+}
+  
+.main__home { 
+  color: $color-three;
+  background-image: url("../images/pexels-aleksandar-pasaric-2078076-400w.webp");
+  background-size: $value-cover;
+  width: $value-auto;
+  height: $eight-hundred-px;
+  margin: $value-zero;
+  padding-top: $value-two;
+  align-items: $value-center;
+  display: $value-flex;
+  justify-content: $value-center;
+  padding-bottom: $value-seventy-five;
+
+  .main__home--animation {
+    clip-path: circle($value-seventy-five);
+    height: $value-ten-vh;
+    width: $value-sixty-vh;
+    transition: clip-path $value-one-with-five;
+  }
+  
+  .main__home--animation:hover {
+    clip-path: circle($value-five);
+  }
+
+  .svg__image--clip-path {
+    width: $four-hundred-px;
+    height: $value-auto;
+  }
+}
+
+.main { 
+  color: $color-three;
+  background-color: $color-two;
+  margin: $value-zero;
+
+  .main__title--style {
+    font-size: $font-size-title-subpage;
+    text-align: $value-center;
+    padding-top: $value-three;
+    padding-bottom: $value-one;
+  }
+
+  .main__container--subtitle {
+    padding-left: $value-ten;
+    padding-right: $value-ten;
+  }
+
+  .main__container--subtitle--link {
+    color: $color-three;
+    text-decoration: $value-none;
+  }
+
+  .main__container--subtitle--link:hover {
+    color: $color-eight;
+  }
+
+  .main__container {  
+    line-height: $line-height;
+    text-align: $value-justify;
+    padding: $value-ten;
+
+    .main__container--outstanding__image {
+      width: $value-hundred;
+      height: $value-auto;
+    }
+
+    .main__container__list {
+      list-style-type: $value-none;
+      text-decoration: $value-none;
+      padding-bottom: $value-ten;
+    }
+
+    .main__container__modul--column, 
+    .main__container__modul--column > ul
+     {  
+      list-style-type: $value-none;
+      text-decoration: $value-none;
+      line-height: $line-height;
+      text-align: $value-justify;
+      padding-left: $value-ten;
+      padding-right: $value-ten;
+    }
+
+    .main__container--animation {
+      width: $three-hundred-fifty-px;
+      height: $value-auto;
+      align-items: $value-center;
+      display: $value-flex;
+      justify-content: $value-center;
+    }
+
+    .main__container--animation:hover {
+      animation-name: rotate;
+      animation-duration: $value-zero-point-nine-sec;
+      animation-iteration-count: $value-ten;
+    }
+  }
+
+  .main__container__frame {
+    margin: $value-zero;
+    padding: $value-one;
+    padding-top: $value-two;
+    padding-bottom: $value-two;
+    width: $value-hundred;
+    background-color: $color-seven;
+  
+    .main__container__frame--one--column  {  
+      list-style-type: $value-none;
+      text-decoration: $value-none;
+      line-height: $line-height;
+      margin: $value-zero;
+      padding-left: $value-ten;
+      padding-right: $value-ten;
+    }
+  }
+
+  .main__container--link {
+    color: $color-nine;
+    text-decoration: $value-none;
+  }
+
+  .main__container--miniature {
+    width: $value-hundred;
+    max-width: $three-hundred-px;
+    height: $value-auto;
+  }
+}
+
+.footer, .footer--fixed {
+  margin-top: $margin-top-footer-rem;
+  font-size: $font-size-text-footer;
+  text-align: $value-center;
+  padding-top: $value-two;
+  padding-bottom: $value-two;
+  background-color: $color-four;
+  color: $color-two;
+  bottom: $value-zero;
+  width: $value-hundred;
+  
+  .footer--link {
+    list-style-type: $value-none;
+    text-decoration: $value-none;
+    padding: $value-one;
+    color: $color-ten;
+  }
+
+  .footer--link:hover {
+    color: $color-six;
+  }
+}
+
+.footer--fixed {
+  position: $value-fixed;
+}
+
+.element--centered--text {
+  text-align: $value-center;
+}
+
+.element--contrast {
+  background-color: $color-ten;
+}
+
+h2 {
+  padding-top: $value-three;
+}
+
+iframe, img, image {
+  max-width: $value-hundred;
+  min-height: $two-hundred-px;
+  width: $value-hundred;
+  height: $value-auto;
+  margin: $value-zero-number $value-auto;
+
+}
+
+button {
+  background-color: $color-ten;
+  border: $value-none;
+  color: $color-two;
+  padding: $value-one;
+}
+
+button:hover {   
+  background-color: $color-nine;
+}
+
+input {
+  border: $value-none;
+  padding: $value-one;
+}
+
+.main__container--grid {
+  display: $value-grid;
+  grid-template-columns: $value-one-fr;
+  padding: $value-ten;
+}
+
+.svg--animation {
+  animation-duration: 2s;
+  animation-name: slidein;
+
+  .svg--animation--rect {
+    fill: $color-ten;
+  }
+
+  .svg--animation--text {
+    font-size: $font-size-title-svg;
+  }
+ }
+
+/* media query styles adapted for tablets and desktops*/
+@media (min-width: $tablet-min-devices) {
+  .navigation__menu--options {
+    text-align: $value-center;
+
+    .navigation__menu--options--option {
+      display: $value-inline;
+    }
+  }
+  
+  .footer {
+    padding-bottom: $value-three;
+  }
+}
+
+/* media query for tablets */
+@media (min-width: $tablet-min-devices) and (max-width: $tablet-max-devices) {
+  .main__home { 
+    background-image: url("../images/pexels-aleksandar-pasaric-2078076-480w.webp");
+  }
+
+  .home__title--style {
+    padding-top: $value-twelve;
+  }
+
+  .main__container--grid {
+    display: $value-grid;
+    grid-template-columns: $value-one-fr $value-one-fr;
+  }
+}
+
+/* media query for desktops */
+@media (min-width: $desktop-min-devices) {
+  .main__home { 
+    background-image: url("../images/pexels-aleksandar-pasaric-2078076-1024w.webp");
+  }
+
+  .home__title--style {
+    padding-top: $value-ten;
+  }
+  
+  .navigation__menu--options--option {
+    padding: $value-one;
+  }
+
+  .main__container--grid {
+    display: $value-grid;
+    grid-template-columns: $value-one-fr $value-one-fr $value-one-fr;
+  }
+}
+
+@keyframes circle {
+  0% { 
+    clip-path: circle($value-seventy-five); 
+  }
+
+  100% { 
+    clip-path: circle($value-fifty-five); 
+  }
+}
+
+@keyframes slidein {
+  from {
+    margin-left: $value-hundred;
+    width: $value-three-hundred;
+  }
+
+  to {
+    margin-left: $value-zero;
+    width: $value-hundred;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate($value-zero-deg);
+  }
+
+  100% {
+    transform: rotate($value-fifteen-deg);
+  }
+}
